@@ -1,0 +1,9 @@
+# material -> friction tier
+# Edit freely; the classifier loads this at startup.
+ice:    low
+tile:   low
+grass:  medium
+carpet: high
+road:   high
+cloth:  medium
+sticky: high

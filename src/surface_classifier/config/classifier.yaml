@@ -1,0 +1,42 @@
+classifier_node:
+  ros__parameters:
+    # Topics
+    image_topic: /camera/rgb/raw
+    material_topic: /surface/material
+    friction_topic: /surface/friction
+    confidence_topic: /surface/confidence
+    debug_image_topic: /surface/debug_image
+
+    # Inference
+    engine_path: /home/nvidia/f1/f1tenth_ws/src/surface_classifier/models/surface_mnv3_fp16.trt
+    friction_map_path: /home/nvidia/f1/f1tenth_ws/src/surface_classifier/config/friction_map.yaml
+    input_size: 224
+    inference_hz: 10.0
+
+    # Class names (must match training class index order from train.py)
+    class_names: ["carpet", "cloth", "sticky", "tile"]
+
+    # Fixed image-frame ROI on the 640x480 BGR frame.
+    # Bottom-center patch -> closest 30-50 cm of ground given 20 cm camera height.
+    roi_x: 220
+    roi_y: 320
+    roi_w: 200
+    roi_h: 160
+
+    # Temporal smoothing (majority vote ring buffer)
+    smoothing_window: 5
+
+    # Debug
+    publish_debug: true
+
+recorder_node:
+  ros__parameters:
+    image_topic: /camera/rgb/raw
+    output_dir: ~/surface_data
+    current_label: unlabeled
+    save_hz: 2.0
+    # Reuse the same ROI as the classifier
+    roi_x: 220
+    roi_y: 320
+    roi_w: 200
+    roi_h: 160

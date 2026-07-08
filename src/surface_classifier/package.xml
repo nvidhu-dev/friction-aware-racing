@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>surface_classifier</name>
+  <version>0.1.0</version>
+  <description>Ground-surface material/friction classifier for the F1Tenth platform using a TensorRT-FP16 MobileNetV3 model on RealSense RGB frames.</description>
+  <maintainer email="nandgopalv@gmail.com">nandgopalv</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>cv_bridge</depend>
+
+  <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>python3-yaml</exec_depend>
+  <exec_depend>python3-opencv</exec_depend>
+  <!-- pycuda and tensorrt are NOT rosdep-resolvable keys; install manually on the Jetson:
+         pip3 install pycuda
+       tensorrt Python bindings ship with JetPack at /usr/lib/python3.10/dist-packages/tensorrt*. -->
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

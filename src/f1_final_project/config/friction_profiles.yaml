@@ -1,0 +1,50 @@
+# ===== Low Friction =====
+level_1:
+  # Speed Limits
+  max_v: 1.8
+  min_v: 0.5
+  # Acceleration
+  max_lat_accel: 1.5
+  max_lon_accel: 1.0
+  # Lookahead
+  lookahead_gain: 1.5
+  lookahead_min: 0.7
+  lookahead_max: 2.5
+  k_sensitivity: 0.5
+  k_lookahead_window: 14
+  # Steering
+  turn_p: 1.0
+
+# ===== Medium Friction =====
+level_2:
+  # Speed Limits
+  max_v: 2.5
+  min_v: 0.6
+  # Acceleration
+  max_lat_accel: 2.5
+  max_lon_accel: 1.2
+  # Lookahead
+  lookahead_gain: 1.5
+  lookahead_min: 0.8
+  lookahead_max: 2.5
+  k_sensitivity: 0.5
+  k_lookahead_window: 18
+  # Steering
+  turn_p: 1.5
+
+# ===== High Friction =====
+level_3:
+  # Speed Limits
+  max_v: 4.0
+  min_v: 1.5
+  # Acceleration
+  max_lat_accel: 4.0
+  max_lon_accel: 2.2
+  # Lookahead
+  lookahead_gain: 1.5
+  lookahead_min: 0.7
+  lookahead_max: 2.5
+  k_sensitivity: 0.5
+  k_lookahead_window: 18
+  # Steering
+  turn_p: 1.5
