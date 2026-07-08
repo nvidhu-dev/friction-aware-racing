@@ -8,10 +8,10 @@ Full write-up: [`docs/ESE6150_Team3_Final_Project.pdf`](docs/ESE6150_Team3_Final
 
 ## Team Members
 
-* **Ethan Sanchez** — etsa@seas.upenn.edu (GitHub: [@etsa2103](https://github.com/etsa2103), Website: [ethansanchez.net](https://ethansanchez.net))
-* **Avani Narula** — avnarula@seas.upenn.edu (GitHub: [@avnarula](https://github.com/avnarula))
-* **Yuntong Li** — li51@seas.upenn.edu (GitHub: [@li51-AMX](https://github.com/li51-AMX))
-* **Nandagopal Vidhu** — nvidhu@seas.upenn.edu (GitHub: [@nvidhu-upenn](https://github.com/nvidhu-upenn))
+* **Ethan Sanchez** — etsa@upenn.edu (GitHub: [@etsa2103](https://github.com/etsa2103), Website: [ethansanchez.net](https://ethansanchez.net))
+* **Avani Narula** — avnarula@upenn.edu (GitHub: [@avnarula](https://github.com/avnarula))
+* **Yuntong Li** — li51@upenn.edu (GitHub: [@li51-AMX](https://github.com/li51-AMX))
+* **Nandagopal Vidhu** — nvidhu@upenn.edu (GitHub: [@nvidhu-dev](https://github.com/nvidhu-dev))
 
 ## Demo Video
 
